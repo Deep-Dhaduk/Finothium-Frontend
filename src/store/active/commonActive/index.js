@@ -1,0 +1,52 @@
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import authConfig from 'src/configs/auth'
+
+// ** Axios Imports
+import axios from 'axios'
+
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
+
+// ** Get token
+const getToken = () => {
+    return localStorage.getItem(authConfig.storageTokenKeyName);
+};
+
+// ** Fetch Payment Transaction
+
+export const fetchActiveCommonData = createAsyncThunk('commonActive/fetchActiveCommonData', async (data, { getState, dispatch }) => {
+    const token = getToken()
+    const response = await axios.post(`${apiBaseUrl}common/active-common`, {
+        type: data.type
+    },
+        {
+            params: data.params,
+            headers: {
+                // 'Content-Type': 'application/json',
+                'authorization': `Bearer ${token}`
+            }
+        },
+    )
+    return response.data
+})
+
+
+export const commonActive = createSlice({
+    name: 'commonActive',
+    initialState: {
+        data: [],
+        total: 1,
+        params: {},
+        allData: []
+    },
+    reducers: {},
+    extraReducers: builder => {
+        builder.addCase(fetchActiveCommonData.fulfilled, (state, action) => {
+            state.data = action.payload.data
+            state.total = action.payload.total
+            state.params = action.payload.params
+            state.allData = action.payload.allData
+        })
+    }
+})
+
+export default commonActive.reducer

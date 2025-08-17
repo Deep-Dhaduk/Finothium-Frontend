@@ -1,0 +1,32 @@
+export const companyMaster = "Company Master"
+export const clientMaster = "Client Master"
+export const categoryMaster = "Category Master"
+export const paymentTypeMaster = "Payment Type Master"
+export const accountTypeMaster = "Account Type Master"
+export const accountGroupMaster = "Account Group Master"
+export const subCategoryMaster = "Subcategory Master"
+export const accountMaster = "Account Master"
+export const paymentTransaction = "Payment"
+export const receiptTransaction = "Receipt"
+export const transferTransaction = "Transfer"
+export const userMaster = "User Master"
+export const tenantMaster = "Tenant Master"
+export const roleMaster = "Role Master"
+export const parentMenu = "Parent Menu"
+export const childMenu = "Child Menu"
+export const client = "Client"
+export const category = "Category"
+export const paymentType = "Payment Type"
+export const account_Type = "Account Type"
+export const account_Group = "Account Group"
+export const subCategory = "Sub Category"
+export const payment = "Payment"
+export const receipt = "Receipt"
+
+export const adminRoleName = "admin"
+export const userRoleName = "user"
+export const superAdminRoleName = "superadmin"
+
+export const tenantExpireWarningDays = 15
+
+

@@ -1,1 +1,0 @@
-# Finothium-Frontend

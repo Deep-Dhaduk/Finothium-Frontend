@@ -1,0 +1,180 @@
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* background-color: var(--scrollbar-color); */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+  border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #092349;
+} */
+
+body.dark-theme .swal2-container .swal2-popup.swal2-modal {
+  background-color: #30334E;
+  color: white;
+}
+
+body .MuiDataGrid-row.MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
+  overflow: hidden;
+  white-space: normal;
+}
+
+/* div.profile-avatar div div {
+  border-radius: 50% !important;
+  overflow: hidden;
+} */
+
+body.dark-theme div.profile-avatar div div label {
+  color: white !important;
+}
+
+.blur-background {
+  backdrop-filter: blur(10px);
+}
+
+/* .spinner-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+} */
+
+/* .spinner-fade-in.active {
+  opacity: 1;
+} */
+
+body.dark-theme .custom-toast {
+  background-color: #30334E;
+  color: white !important;
+}
+
+body.light-theme .custom-toast {
+  background-color: white;
+  color: black !important;
+}
+
+body.dark-theme .card-color .MuiGrid-container .MuiGrid-item .MuiCard-root {
+  background-color: #282A42;
+  color: white !important;
+}
+
+.footer-accordian .MuiDataGrid-footerContainer {
+  display: none;
+}
+
+.MuiGrid-root.MuiGrid-item.module-heading {
+  padding-top: 0;
+}
+
+.dashboard-card-title .MuiTypography-root.MuiCardHeader-title {
+  font-size: 16px;
+}
+
+.menu-item-hide .MuiDataGrid-menuIconButton {
+  display: none;
+}
+
+.menu-item-hide .MuiDataGrid-main .MuiDataGrid-columnHeaders .MuiDataGrid-columnHeadersInner .MuiDataGrid-columnHeader .MuiDataGrid-columnHeaderDraggableContainer .MuiDataGrid-columnHeaderTitleContainer .MuiDataGrid-columnHeaderTitleContainerContent .MuiDataGrid-columnHeaderTitle {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.swal2-container.swal2-center.swal2-backdrop-show {
+  backdrop-filter: blur(5px);
+  z-index: 1300;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tableSize .MuiTableContainer-root .MuiTable-root .MuiTableHead-root .MuiTableRow-root .MuiTableCell-root {
+  padding: 0;
+}
+
+.tableSize .MuiTableContainer-root .MuiTable-root .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root {
+  padding: 1px;
+}
+
+/* .css-6rtmv-MuiCardContent-root:last-of-type {
+   padding-bottom: 0.2rem !important; 
+padding: 0.3rem !important;
+padding-left: 0.8rem !important;
+}
+
+.css-6rtmv-MuiCardContent-root {
+padding: 26px;
+padding-top: 0.2rem !important;
+padding-left: 0.4rem !important;
+
+}
+
+.css-1vt60ei-MuiGrid-root {
+margin-top: 0rem !important;
+}
+
+.css-1vt60ei-MuiGrid-root>.MuiGrid-item {
+  padding-top: 0.9rem !important;
+padding-bottom: 0rem !important;
+} */
+
+
+/* .tableSize .MuiTableContainer-root .MuiTable-root .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root .MuiInputBase-root {
+  margin: 5px 0 5px 0;
+} */
+
+/* .MuiTooltip-popper.MuiTooltip-popperInteractive .MuiTooltip-tooltip {
+  font-size: 13px;
+} */
+
+/* body.light-theme .MuiTooltip-popper.MuiTooltip-popperInteractive .MuiTooltip-tooltip {
+  background-color: red;
+}
+
+body.dark-theme .MuiTooltip-popper.MuiTooltip-popperInteractive .MuiTooltip-tooltip {
+  background-color: red;
+} */
+
+/* .tableSize .MuiPaper-root .MuiTable-root .MuiTableHead-root .MuiTableBody-root .MuiTableRow-head  .MuiCard-root .MuiCardContent-root.css-3n2a3r-MuiCardContent-root{
+  padding-bottom: 0;
+} */
+
